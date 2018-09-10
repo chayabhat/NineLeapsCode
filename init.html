@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Add On</title>
+
+    <!-- Latest compiled and minified CSS -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+   <!-- jQuery library -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+   <!-- Latest compiled JavaScript -->
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Arvo|Dosis|Slabo+27px|Ruslan+Display" rel="stylesheet">
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+<link rel="stylesheet" href="animate.min.css">
+<script src="js/app.js" charset="utf-8"></script>
+<link rel="stylesheet" href="css/one.css">
+  </head>
+
+  <body ng-app="myApp">
+  <div>
+    <div class="navbar-fixed">
+
+    <nav class="navbar navbar-default">
+      <div class="nav-wrapper" style="background: Maroon;>
+      background: linear-gradient(to right,violet,indigo,blue,green,yellow,orange,red);">
+      <div class="container-fluid">
+        <div>
+          <a  class="navbar-brand" href="#" style="padding-left:5%;color:white;
+    font-family: 'Ruslan Display', cursive;font-size:5rem;">NINE LEAPS</a>
+        </div>
+          <form action="">
+        <ul class="nav navbar-nav navbar-right" style="padding-right:5%; font-family: 'Slabo 27px', serif;font-size:120%;">
+
+          <li  ><a  style="color:white;" href="#!home">HOME</a></li>
+
+          <!--add employee details in modal-->
+
+          <li><a  style="color:white;" href="#!addemployee">ADD EMPLOYEE</a></li>
+
+
+<!--View droppdown-->
+<li class="dropdown">
+<button class="dropbtn">VIEWS</button>
+<div class="dropdown-content">
+<a href="#!tableview">Table View</a>
+<a href="#!listsview">List View</a>
+<a href="#!treeview">Tree View</a>
+</div>
+</div>
+        </ul>
+              </form>
+      </div>
+    </nav>
+  </div>
+
+    <div class="row " id="center">
+               <div class=" col-md-6 col-xs-12 ">
+                 <div class="ng-view">
+                 </div>
+           </div>
+       </div>
+</div>
+  </body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <title>jOrgChart - A jQuery OrgChart Plugin</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/jquery.jOrgChart.css"/>
+    <link rel="stylesheet" href="css/custom.css"/>
+    <link href="css/prettify.css" type="text/css" rel="stylesheet" />
+
+    <script type="text/javascript" src="prettify.js"></script>
+
+    <!-- jQuery includes -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+
+    <script src="jquery.jOrgChart.js"></script>
+
+    <script>
+    jQuery(document).ready(function() {
+        $("#org").jOrgChart({
+            chartElement : '#chart',
+            dragAndDrop  : true
+        });
+    });
+    </script>
+  </head>
+
+  <body onload="prettyPrint();">
+  <h2 style="padding-left:33rem;"><b>Tree View</b></h2>
+    <ul id="org" style="display:none">
+    <li>Anchal CEO
+       <ul>
+         <li>Anika COO
+           <ul>
+             <li>Udit (Accounts Manager)</li>
+             <li>Yatisya (Bussiness Analyst)</li>
+             <li>Zena (Scrum Master)</li>
+             <li>Aahana Head (Quality)</li>
+           </ul>
+         </li>
+         <li>Ashlesha
+           <ul>
+             <li>Hardik (Manager Sales)</li>
+           </ul>
+         </li>
+         <li>Birju
+           <ul>
+             <li>Jaganmay (Manager Marketing)</li>
+           </ul>
+             </li>
+
+         <li>Devak
+           <ul>
+             <li>Lankan (Recuiter Manager)</li>
+             <li>Namdev (L&D Manager)</li>
+               <li>Pradosh Facilities</li>
+             </ul>
+</li>
+       </ul>
+     </li>
+   </ul>
+
+    <div id="chart" class="orgChart"></div>
+
+    <script>
+        jQuery(document).ready(function() {
+
+            /* Custom jQuery for the example */
+            $("#show-list").click(function(e){
+                e.preventDefault();
+
+
+            });
+
+            $('#list-html').text($('#org').html());
+
+            $("#org").bind("DOMSubtreeModified", function() {
+                $('#list-html').text('');
+
+                $('#list-html').text($('#org').html());
+
+                prettyPrint();
+            });
+        });
+    </script>
+
+</body>
+</html>

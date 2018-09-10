@@ -1,0 +1,56 @@
+body, html, div,a{
+	margin 				: 0;
+	padding 			: 0;
+}
+
+body, html{
+	width 				: 100%;
+}
+
+body{
+
+	color 				: white;
+	font-family 		: tahoma;
+	font-weight 		: lighter;
+	padding-top 		: 40px;
+}
+
+a{
+	color 				: #E05E00;
+	text-decoration		: none;
+}
+
+/* general */
+.clear {
+	clear: both;
+}
+
+
+
+/* bootstrap overrides */
+.alert-message{
+	margin: 9px 0;
+
+}
+
+/* Custom chart styling */
+.jOrgChart {
+margin-top:-5rem;
+  padding               : 8rem;
+}
+
+/* Custom node styling */
+.jOrgChart .node {
+	font-size 			: 16px;
+	background-color 	: SteelBlue;
+	border-radius 		: 0px;
+	border 				: 5px solid white;
+	color 				: black;
+	-moz-border-radius 	: 8px;
+}
+	.node p{
+		font-family 	: tahoma;
+		font-size 		: 40px;
+		line-height 	: 20px;
+		padding 		: 6px;
+	}

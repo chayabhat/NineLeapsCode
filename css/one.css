@@ -1,0 +1,89 @@
+body{
+  background-color:wheat;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 50%;
+    border-radius:10rem;
+}
+.card .container{
+margin-top:8rem;
+}
+
+.container {
+    padding: 2px 16px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 15%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+
+
+/* Dropdown Button */
+.dropbtn {
+   background-color: maroon;
+   color: white;
+   padding: 16px;
+   font-size: 16px;
+   border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+   position: relative;
+   display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+   display: none;
+   position: absolute;
+   background-color: #f1f1f1;
+   min-width: 160px;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+   color: black;
+   padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color:orangered;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: orangered;}
+
+#continer{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+width:180%;
+margin-left:7rem;
+background:;
+margin-top:3rem;
+background-color:orange;
+}
+
+#continer:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,1.0);
+    border-radius:2rem;
+}
+.card2{
+  background-color:white;
+}
